@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+	int i=1,n,k,es=0,os=0;
+	printf("Enter the n limit:");
+	scanf("%d",&n);
+	printf("\nEnter the number:");
+	scanf("%d",&k);
+	while(i<=n)
+	{
+		if(i%k==0)
+		{
+			printf("\n%d\t",i);
+			if(i%2==0)
+			 es=es+i;
+			else
+			 os=os+i;
+		}
+		i++;
+	}
+	printf("\nEven sum=%d\nOdd sum=%d",es,os);
+	return 0;
+}
